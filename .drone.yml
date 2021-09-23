@@ -4,13 +4,36 @@ type: kubernetes
 name: build
 
 steps:
+  - name: wait for docker
+    image: docker
+    commands:
+      - timeout 15s /bin/sh -c 'while [ ! -S /var/run/docker.sock ]; do sleep 1; done'
+      - docker version
+    volumes:
+      - name: dockersock
+        path: /var/run
   - name: build
     image: docker
     commands:
       - apk add --no-cache make
       - make
+    volumes:
+      - name: dockersock
+        path: /var/run
+
+services:
+  - name: start docker
+    image: docker:dind
+    privileged: true
+    volumes:
+      - name: dockersock
+        path: /var/run
+
+volumes:
+  - name: dockersock
+    temp: {}
 ---
 kind: signature
-hmac: 70d6a443ef00054708802fa129b4f39acdf3d57ddafe045942a0a05eed3f087f
+hmac: 39401feba24ed2d848d51f457c76148563b4acbfc36a68a764e8ad66ffbc95df
 
 ...

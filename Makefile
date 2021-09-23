@@ -1,3 +1,8 @@
 .PHONY: all
-all:
-	@echo "Happy Hacking!"
+all: build test
+
+build:
+	docker build . -t greetings
+
+test:
+	docker run --rm greetings
