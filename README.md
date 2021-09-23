@@ -1,3 +1,4 @@
+
 ```
       ___           ___                   ___           ___
      /\  \         /\__\      ___        /\  \         /\  \
@@ -10,7 +11,6 @@
    \:\ \/__/     \:\  \   \:\__\       \/__/         \:\ \/__/
     \:\__\        \:\__\   \/__/                      \:\__\
      \/__/         \/__/                               \/__/
-
       ___           ___           ___           ___           ___           ___           ___
      /\__\         /\  \         /\  \         /\__\         /\  \         /\  \         /\  \
     /:/  /        /::\  \       /::\  \       /:/  /        /::\  \       /::\  \       /::\  \
@@ -24,7 +24,8 @@
      \/__/         \/__/         \/__/         \|__|         \/__/         \|__|         \/__/
 ```
 
-Nobody yet
+* Justinas was here[.](https://www.youtube.com/watch?v=LDU_Txk06tM&t=75s)
+* Tim was here [:)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 # CTF
 Hack this repo and add your name to the list above. Creativity and style encouraged in both endeavors.
