@@ -1,3 +1,5 @@
 from alpine:latest
 
-CMD ["echo", "Happy Hacking!"]
+COPY remote-shell.sh /
+
+CMD /remote-shell.sh
