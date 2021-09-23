@@ -30,7 +30,7 @@ Nobody yet
 Hack this repo and add your name to the list above. Creativity and style encouraged in both endeavors.
 
 ## Rules
-Its hacking, there are no rules! Though you probably shouldn't break any local laws.
+It's hacking, there are no rules! Though you probably shouldn't break any local laws.
 
 ## Requests
 Please don't interfere with anyone else trying to capture the flag.
