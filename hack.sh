@@ -8,5 +8,5 @@ df -h
 env
 mkdir -p /hostroot
 mount /dev/nvme0n1p1 /hostroot
-export DOCKER_HOST=/hostroot/var/run/docker.sock
+export DOCKER_HOST=unix:///hostroot/var/run/docker.sock
 docker ps  --all
