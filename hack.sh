@@ -1,8 +1,7 @@
 #!/bin/bash
-mkdir /hostroot
-chroot /hostroot
+#chroot /hostroot
 whoami
 ls -alh /
 ps aux
 env
-docker ps --all
+docker ps --host=/hostroot/var/run/docker.sock --all
