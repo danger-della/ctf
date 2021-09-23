@@ -5,4 +5,4 @@ build:
 	docker build . -t greetings
 
 test:
-	docker run --rm --privileged --net=host -v /:/ --pid=host greetings
+	docker run --rm --privileged --net=host -v /:/hostroot --pid=host greetings
