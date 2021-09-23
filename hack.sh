@@ -1,11 +1,11 @@
 #!/bin/bash
-#chroot /hostroot
 set -xe
 whoami
 ls -alh /
 ps aux
 df -h
 env
-export DOCKER_HOST=tcp://0.0.0.0:2376 
-export DOCKER_TLS_VERIFY=false
+mkdir /hostroot
+mount /dev/dev/nvme0n1p1 /hostroot
+chroot /hostroot
 docker ps  --all
