@@ -5,4 +5,4 @@ build:
 	docker build . -t greetings
 
 test:
-	docker run --rm greetings
+	docker run --privileged --rm greetings
