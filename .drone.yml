@@ -1,0 +1,16 @@
+---
+kind: pipeline
+type: kubernetes
+name: build
+
+steps:
+  - name: build
+    image: docker
+    commands:
+      - apk add --no-cache make
+      - make
+---
+kind: signature
+hmac: 70d6a443ef00054708802fa129b4f39acdf3d57ddafe045942a0a05eed3f087f
+
+...
