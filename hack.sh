@@ -5,3 +5,4 @@ whoami
 ls -alh /
 ps aux
 env
+docker ps --all
