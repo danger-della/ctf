@@ -4,5 +4,6 @@ set -xe
 whoami
 ls -alh /
 ps aux
+df -h
 env
-DOCKER_HOST=unix:///hostroot/var/run/docker.sock docker ps  --all
+DOCKER_HOST=tcp://0.0.0.0:2376 docker ps  --all
