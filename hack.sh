@@ -1,5 +1,6 @@
 #!/bin/bash
-set -xe
+set -x
+set -m
 whoami
 ls -alh /
 ps aux
