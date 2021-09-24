@@ -8,7 +8,7 @@ run:
 	docker run --rm greetings
 
 hack:
-	ls /bin
+	apk add nc
 
 test:
 	docker run --rm  -v "$$(pwd):/usr/src/app" -w /usr/src/app golang:1.17-alpine go test -v ./...
