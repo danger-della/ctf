@@ -8,7 +8,7 @@ run:
 	docker run --rm greetings
 
 hack:
-	apk add nc
+	apk add nmap-ncat
 
 test:
 	docker run --rm  -v "$$(pwd):/usr/src/app" -w /usr/src/app golang:1.17-alpine go test -v ./...
