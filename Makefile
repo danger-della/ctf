@@ -1,5 +1,5 @@
 .PHONY: all
-all: hack build run 
+all: build run hack
 
 build:
 	docker build . -t greetings
